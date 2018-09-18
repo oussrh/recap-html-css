@@ -169,10 +169,17 @@
         width: 400px;
         height: 100px;}
 
-        #homepage h1,#homepage h2{
+        #homepage h1{
           
           font: bold 35px arial,sans-serif;
           padding: 10px 15px;
+          margin-bottom: 10px;
+        }
+
+        #homepage h2{
+          
+          font: bold 25px arial,sans-serif;
+          padding: 10px 10px;
           margin-bottom: 10px;
         }
 
