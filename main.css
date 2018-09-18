@@ -160,3 +160,25 @@
       width: 100vw;
     }
 
+    @media screen and (max-width: 1010px) {
+      #homepage section{
+        z-index: 20;
+        position: relative;
+        top:-70%;
+        left: 30%;
+        width: 400px;
+        height: 100px;}
+
+        #homepage h1,#homepage h2{
+          
+          font: bold 35px arial,sans-serif;
+          padding: 10px 15px;
+          margin-bottom: 10px;
+        }
+
+        header a{
+          
+          font:15px coalition;
+        margin-left:20px;}
+    }
+
