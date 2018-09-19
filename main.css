@@ -41,13 +41,13 @@
     /* hide the scroll bar */
     ::-webkit-scrollbar { 
       display: none; 
-  }
+    }
+
     /* creation of a grid with 3 rows and a adaptativ height */
     #container {
       display: grid;
       height: 100vh;
       grid-template-rows: 1fr 1fr 1fr;
-
     }
 
     header {
@@ -62,18 +62,21 @@
       color: #fff;
       font-size:50px;
       margin:15px 30px 0 20px;
-          }
+    }
 
     header ul{display: inline-block;}
+    
     header li{
       margin-top: 25px;
-      display: inline-block;}
+      display: inline-block;
+    }
     
     header a{
       color: #fff;
       font:20px coalition;
       text-decoration:none;
-    margin-left:30px;}
+      margin-left:30px;
+    }
 
     header a:hover{
       text-shadow: 0px -2px 0px rgba(0,0,0,1), 0 0 5px rgba(255,255,255,0.8),0 -4px 15px rgba(255,255,255,0.5);
@@ -84,10 +87,8 @@
       float: left;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
-      background: royalblue;
       height: 85vh;
       overflow: scroll;
-
     }
 
     footer {
@@ -100,7 +101,6 @@
 
     /* sections */
     #homepage {
-      
       background:#000;
       width: 100vw;
       overflow: hidden;
@@ -113,6 +113,7 @@
       z-index: 0;
       background: mediumvioletred;
     }
+
     video{
       z-index: 1;
       min-height:100%;
@@ -125,7 +126,8 @@
       top:-70%;
       left: 50%;
       width: 600px;
-      height: 100px;}
+      height: 100px;
+    }
 
     #homepage h1{
       background: white;
@@ -143,7 +145,6 @@
       padding: 10px 15px;
       z-index: 10;
     }
-
 
     #services {
       background: black;
@@ -165,27 +166,37 @@
         z-index: 20;
         position: relative;
         top:-70%;
-        left: 30%;
+        left: 25%;
         width: 400px;
-        height: 100px;}
+        height: 100px;
+      }
 
         #homepage h1{
-          
           font: bold 35px arial,sans-serif;
           padding: 10px 15px;
           margin-bottom: 10px;
         }
 
         #homepage h2{
-          
           font: bold 25px arial,sans-serif;
           padding: 10px 10px;
           margin-bottom: 10px;
         }
 
         header a{
-          
           font:15px coalition;
-        margin-left:20px;}
+          margin-left:20px;
+        }
+
+        header li{
+          margin-top: 5px;
+          display: inline-block;
+        }
+
+        .logo{
+          font-size:40px;
+          margin:15px 30px 0 20px;
+        }
+    
     }
 
