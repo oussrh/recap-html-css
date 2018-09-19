@@ -147,7 +147,7 @@
     }
 
     #services {
-      background: black;
+      background:url(img/grey.gif);
       width: 100vw;
     }
 
@@ -157,9 +157,54 @@
     }
     
     #contactForm {
-      background: skyblue;
+      background:url(img/formBg.png);
       width: 100vw;
-    }
+      
+      }
+
+
+  .formblock{
+    display: grid;
+      height: 100%;
+      height: 80%;
+      margin: 50px auto 0 auto;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      grid-template-areas: "name lastname email" "sexe . cnx" "selectlist selectlist ." "textarea textarea .";
+  }
+
+
+input,textarea,select{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+  border: none !important;
+  border-bottom: 2px solid rgb(6, 216, 198) !important;
+  background-color:rgba(241, 66, 66,0);
+  font-size:24px;
+  color: #fff;
+  resize: none;
+}
+
+input:focus,select:focus,textarea:focus{background-color:rgba(241, 66, 66,0) !important; outline: none;}
+
+option{background-color:rgba(133, 133, 133, 1) !important; }
+
+
+.name { grid-area: name; }
+
+.lastname { grid-area: lastname; }
+
+.email { grid-area: email; }
+
+.sexe { grid-area: sexe; }
+
+.cnx { grid-area: cnx; }
+
+.selectlist { grid-area: selectlist; }
+
+.textarea { grid-area: textarea; }
 
     @media screen and (max-width: 1010px) {
       #homepage section{
@@ -172,24 +217,24 @@
       }
 
         #homepage h1{
-          font: bold 35px arial,sans-serif;
+          font: bold 30px arial,sans-serif;
           padding: 10px 15px;
           margin-bottom: 10px;
         }
 
         #homepage h2{
-          font: bold 25px arial,sans-serif;
+          font: bold 20px arial,sans-serif;
           padding: 10px 10px;
           margin-bottom: 10px;
         }
 
         header a{
           font:15px coalition;
-          margin-left:20px;
+          margin-left:10px;
         }
 
         header li{
-          margin-top: 5px;
+          margin-top: 25px;
           display: inline-block;
         }
 
