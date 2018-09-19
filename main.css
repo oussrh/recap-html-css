@@ -174,7 +174,7 @@
   }
 
 
-input,textarea,select{
+input[type=text],textarea,select{
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -191,6 +191,26 @@ input:focus,select:focus,textarea:focus{background-color:rgba(241, 66, 66,0) !im
 
 option{background-color:rgba(133, 133, 133, 1) !important; }
 
+input[type="checkbox"],input[type="radio"] {
+  width: 24px;
+  height: 24px;
+  vertical-align: bottom;
+}
+label.checkbox,label.radio {
+  vertical-align: top;
+  line-height: 24px;
+  margin: 2px 0;
+  display: block;
+  height: 24px;
+}
+
+.cnx div{margin-left:10px;}
+.sexe div{margin-left:100px;}
+
+label{color: #fff;
+  font:25px arial,sans-serif;}
+
+.cnx div,.sexe div{margin-bottom: 10px;}
 
 .name { grid-area: name; }
 
