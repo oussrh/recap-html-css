@@ -209,13 +209,12 @@
     .servicesBlocs article:hover {
       animation-name: hoverbounce;
       animation-duration: 0.5s; /* or: Xms */
-      
-      
      }
 
     @keyframes hoverbounce {
       0% {
-        
+        border-bottom: 0px solid rgba(0,0,0,0.5);
+        border-right: 0px solid rgba(0,0,0,0.5);
       }
       
       100% {
@@ -224,8 +223,6 @@
       }
     }
 
-      
-    
     /* ****************map********************** */
     #map {
       background: mediumvioletred;
@@ -247,10 +244,7 @@
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-areas: "name lastname ." "email email ." "sexe  cnx ." "selectlist selectlist ." "textarea textarea ." "submitBt . . ";
   }
-
   
-  
-
   .cnx div,.sexe div{margin-bottom: 10px;}
 
   .name { grid-area: name; }
