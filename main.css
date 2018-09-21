@@ -154,36 +154,78 @@
     }
 
     .servicesBlocs{
-      display: grid;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
       width: 80%;
-      height: 60vh;
-      margin: 50px auto 0 auto;
-      grid-template-columns:1fr 1fr ;
-      grid-template-rows: 1fr 1fr ;
-      grid-template-areas:"service1 service2" "service3 service4";
-      grid-gap: 10px;
+      height: 80vh;
+      margin: 20px auto 0 auto;
     }
 
-    .service1 { grid-area: service1; }
-  
-    .service2 { grid-area: service2; }
-  
-    .service3 { grid-area: service3; }
-  
-    .service4 { grid-area: service4; }
-    
     .servicesBlocs article{
-
       display: block;
+      width: 250px;
+      height: 48%;
+      background:rgba(0,0,0,0.7);
       margin: 0 auto 0 auto;
+      border: 1px solid;
+      border-radius: 5px;
+      overflow: hidden;
+    }
 
+    .servicesBlocs h2{
+      text-align: center;
+      color: #fff;
+      margin: 5px 0 0 0;
+      font: bold 20px arial,sans-serif;
     }
 
     .servicesBlocs img{
-      width: 50%;
-      height: 90%;}
+      width: 100%;
+      height: 100%;
+    }
 
+    figure{
+      background: red;
+      display: block;
+      margin: 10px auto 0 auto;
+      width: 80%;
+      height: 200px;
+      max-height: 200px;
+      }
 
+    .servicesBlocs p{
+      text-align: justify;
+      width: 200px;
+      display: block;
+      margin: 10px auto 0 auto;
+      color: #fff;
+      font: 16px arial,sans-serif;
+    }
+
+    .servicesBlocs article:hover {
+      animation-name: hoverbounce;
+      animation-duration: 0.5s; /* or: Xms */
+      
+      
+     }
+
+    @keyframes hoverbounce {
+      0% {
+        
+      }
+      
+      100% {
+        border-bottom: 5px solid rgba(0,0,0,0.5);
+        border-right: 5px solid rgba(0,0,0,0.5);
+      }
+    }
+
+      
+    
     /* ****************map********************** */
     #map {
       background: mediumvioletred;
@@ -193,7 +235,6 @@
     #contactForm {
       background:url(img/globe.png) 100% 100% no-repeat,url(img/formBg.png);
       width: 100vw;
-      background-size: cover;
       
       }
 
@@ -206,6 +247,9 @@
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-areas: "name lastname ." "email email ." "sexe  cnx ." "selectlist selectlist ." "textarea textarea ." "submitBt . . ";
   }
+
+  
+  
 
   .cnx div,.sexe div{margin-bottom: 10px;}
 
@@ -277,6 +321,7 @@ input[type=submit]{
   font-size: 30px;
   font-weight: bold;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 label{color: #fff;
@@ -286,6 +331,7 @@ label{color: #fff;
 /* ******************************************************* */
 /* ******************Media query************************** */
 /* ******************************************************* */
+
     @media screen and (max-width: 1010px) {
       #homepage section{
         z-index: 20;
@@ -324,4 +370,3 @@ label{color: #fff;
         }
     
     }
-
