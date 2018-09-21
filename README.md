@@ -5,5 +5,8 @@ We have created a website for an imaginary company called "Becode Networking", t
 
 [Our Project](https://oussrh.github.io/recap-html-css/)
 ![picture](img/newlines.png)
+![picture](img/servicesPS.png)
+![picture](img/locationPS.png)
+![picture](img/contactPS.png)
 
 By Dop & Oussama
