@@ -193,6 +193,7 @@
     #contactForm {
       background:url(img/globe.png) 100% 100% no-repeat,url(img/formBg.png);
       width: 100vw;
+      background-size: cover;
       
       }
 
