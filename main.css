@@ -98,7 +98,15 @@
       position: fixed;
       bottom: 0;
       width: 100vw;
-      height: 5vh;
+      height: 7</span>vh;
+    }
+    /*---adding a P tag for the footer element-----*/
+    footer address {
+      text-align: center;
+      color: white;
+    }
+    footer a {
+      color: yellow;
     }
 
     /* ******************home page******************** */
