@@ -98,7 +98,7 @@
       position: fixed;
       bottom: 0;
       width: 100vw;
-      height: 7</span>vh;
+      height: 5vh;
     }
     /*---adding a P tag for the footer element-----*/
     footer address {
@@ -308,7 +308,6 @@ input[type="checkbox"],input[type="radio"] {
 }
 
 label.checkbox,label.radio {
-  vertical-align: top;
   line-height: 24px;
   margin: 2px 0;
   display: block;
