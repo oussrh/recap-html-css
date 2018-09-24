@@ -369,5 +369,11 @@ label{color: #fff;
           font-size:40px;
           margin:15px 30px 0 20px;
         }
+
+        .servicesBlocs{
+          background: #000;
+          overflow: scroll;
+
+        }
     
     }
