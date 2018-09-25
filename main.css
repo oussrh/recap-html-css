@@ -84,12 +84,10 @@
     /*********************************************** */
     main {
       scroll-behavior: smooth;/* add a smooth effect to the scroll */
-      float: left;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       height: 85vh;
       overflow: scroll;
-      overflow:hidden;
     }
      /*********************************************** */
     footer {
@@ -100,12 +98,24 @@
       height: 5vh;
     }
     /*---adding a P tag for the footer element-----*/
-    footer address {
-      text-align: center;
-      color: white;
+
+    footer ul{
+      float: left;
+      color: #fff;
+      margin-top:10px;
+      margin-left:10px;
+      font: 16px arial,sans-serif;
     }
-    footer a {
-      color: yellow;
+
+    footer li{
+     
+      display: inline;
+      margin-right:20px;
+    }
+
+    footer a:hover,footer a:active,footer a{
+      text-decoration: none;
+      color: #fff !important;
     }
 
     /* ******************home page******************** */
@@ -120,7 +130,7 @@
       width:100%;
       height:100vh;
       z-index: 0;
-      background: mediumvioletred;
+      background:black;
     }
 
     video{
@@ -331,12 +341,12 @@ label{color: #fff;
 /* ******************************************************* */
 /* ******************Media query************************** */
 /* ******************************************************* */
-
-    @media screen and (max-width: 1010px) {
+/*******************smartphone************************************** */
+@media only screen and (min-device-width : 310px) and (max-device-width : 680px) {
       #homepage section{
         z-index: 20;
         position: relative;
-        top:-70%;
+        top:-60% !important;
         left: 25%;
         width: 400px;
         height: 100px;
@@ -355,18 +365,217 @@ label{color: #fff;
         }
 
         header a{
-          font:15px coalition;
+          font:14px coalition !important;
           margin-left:10px;
         }
 
         header li{
-          margin-top: 25px;
+          margin-top: 20px;
           display: inline-block;
         }
 
         .logo{
-          font-size:40px;
-          margin:15px 30px 0 20px;
+          font-size:30px;
+          margin:15px 10px 0 10px !important;
+        }
+
+
+        footer ul{
+          display: none;
+        }
+        /********************/
+        .servicesBlocs{
+          margin: 10px auto 0 auto;
         }
     
+        .servicesBlocs article{
+          width: 160px !important;
+          height: 40%;
+        }
+    
+        .servicesBlocs h2{
+          font: bold 10px arial,sans-serif;
+        }
+    
+        .servicesBlocs img{
+          width: 100%;
+          height: 100%;
+        }
+    
+        figure{
+          height: 100px;
+          }
+    
+        .servicesBlocs p{
+          width: 150px;
+          font: 11px arial,sans-serif !important;
+        }
+
+        
+
+        /***************************************/
+        
+
+      .formblock{
+        margin: 50px auto 0 10px;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "name lastname ." "email email ." "sexe  cnx ." "selectlist selectlist ." "textarea textarea ." "submitBt . . ";
+      }
+
+    
+        
+      input[type=text],textarea,select,input[type=chekbox],input[type=radio]{
+        width: 80%;
+        font-size:20px;
+      }
+      
+      input[name=name],input[name=lastName]{
+        width: 80%;
+        font-size:20px;
+      }
+      
+    
+      
+      option{font-size: 20px;}
+      
+      input[type="checkbox"],input[type="radio"] {
+        width: 24px;
+      }
+      
+      
+      input[type=submit]{
+        padding: 10px 10px 10px 10px;
+        font-size: 20px;
+      }
+      
+      label{color: #fff;
+        font:20px arial,sans-serif;
+      }
+
+      #contactForm {
+        background:url(img/formBg.png);
+      
+        }
+
+      
     }
+/*******************tablete************************************** */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+
+  #homepage section{
+    top:-60%;
+    left: 30%;
+  }
+
+  .formblock{
+    margin: 50px auto 0 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "name lastname ." "email email ." "sexe  cnx ." "selectlist selectlist ." "textarea textarea ." "submitBt . . ";
+  }
+
+  footer ul{display: none;}
+
+}
+
+@media screen and (max-width: 1020px) and (min-width: 680px) {
+  #homepage section{
+    top:-60%;
+    left: 25%;
+  }
+
+  .formblock{
+    margin: 50px auto 0 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "name lastname ." "email email ." "sexe  cnx ." "selectlist selectlist ." "textarea textarea ." "submitBt . . ";
+  }
+
+  footer ul{display: none;}
+
+  #contactForm {
+    background:url(img/formBg.png);
+  
+    }
+
+}
+
+@media screen and (max-width: 679px) and (min-width: 320px) {
+  #homepage section{
+    top:-60%;
+    left: 25%;
+  }
+
+  .formblock{
+    margin: 50px auto 0 20px;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: "name lastname ." "email email ." "sexe  cnx ." "selectlist selectlist ." "textarea textarea ." "submitBt . . ";
+  }
+
+  #homepage h1{
+    font: bold 30px arial,sans-serif;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+  }
+
+  #homepage h2{
+    font: bold 20px arial,sans-serif;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+  }
+
+  header a{
+    font:16px coalition;
+    margin-left:10px;
+  }
+
+  header li{
+    margin-top: 20px;
+    display: inline-block;
+  }
+
+  .logo{
+    font-size:30px;
+    margin:15px 10px 0 20px;
+  }
+
+/********************/
+.servicesBlocs{
+  margin: 10px auto 0 auto;
+}
+
+.servicesBlocs article{
+  width: 180px;
+  height: 35%;
+}
+
+.servicesBlocs h2{
+  font: bold 10px arial,sans-serif;
+}
+
+.servicesBlocs img{
+  width: 100%;
+  height: 100%;
+}
+
+figure{
+  height: 100px;
+  }
+
+.servicesBlocs p{
+  width: 100px;
+  font: 12px arial,sans-serif;
+}
+
+  
+  footer ul{display: none;}
+
+  #contactForm {
+    background:url(img/formBg.png);
+  
+    }
+
+}
