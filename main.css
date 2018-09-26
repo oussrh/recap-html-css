@@ -355,6 +355,7 @@ label{color: #fff;
 
       .fullscreen{        
         background: url(img/bg-smph.png);
+        background-size: cover;
       }
   
 
