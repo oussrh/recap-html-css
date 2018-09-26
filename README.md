@@ -24,7 +24,7 @@ Since writing the code there hasn't been any significant changes in our professi
 
  Below is a link to the code:
 
-
+[Our Project](https://oussrh.github.io/recap-html-css/)
 
 The code is complete. The final project shall be pitched infront of potential clients. 
 
@@ -41,7 +41,7 @@ The code consist of basic HTML and CSS using Grid. This code is just a simple we
 The code was written as part of an assignment in class.
 
 
-[Our Project](https://oussrh.github.io/recap-html-css/)
+
 ![picture](img/newlines.png)
 ![picture](img/servicesPS.png)
 ![picture](img/locationPS.png)
