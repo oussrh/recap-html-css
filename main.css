@@ -343,7 +343,8 @@ label{color: #fff;
 /* ******************************************************* */
 /*******************smartphone************************************** */
 @media only screen and (min-device-width : 310px) and (max-device-width : 680px) {
-      #homepage section{
+  bg-smph    
+  #homepage section{
         z-index: 20;
         position: relative;
         top:-60% !important;
@@ -351,6 +352,11 @@ label{color: #fff;
         width: 400px;
         height: 100px;
       }
+
+      .fullscreen{        
+        background: url(img/bg-smph.png);
+      }
+  
 
         #homepage h1{
           font: bold 30px arial,sans-serif;
