@@ -30,11 +30,13 @@ The code is complete. The final project shall be pitched infront of potential cl
 
 ## Content
 
-The code consist of basic HTML and CSS using Grid. This code is just a simple web page and does not contain any executable file. It consist the the following sections:
+The code consist of basic HTML and CSS using Grid. This code is just a simple web page and does not contain any executable file. It consist the the following sections: 
 1. Home
 2. Services
 3. Location
 4. Contact 
+
+We used 3 seperate @media files in the CSS  to make the page responsive to computer browsers, tablets and smartphones.
 
 ## Origin
 
